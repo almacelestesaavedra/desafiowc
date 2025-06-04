@@ -1,0 +1,30 @@
+.portfolio{
+    background-color:#13171C;
+    background-image: url(/doodle\ items.png);
+    height: 1903px;
+}
+.portfolio__contenedor{
+    height: 490px;
+    width: 211px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio__contenedor__titulo{
+    text-align: center;
+    color: #00ADB5;
+    font-family: "popins", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 54px;
+}
+.color-blanco{
+    color:#ffffff
+
+}
+.portfolio__contenedor__imagen{
+    width: 219px;
+    height: 211px;
+    margin: auto;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <link rel="stylesheet" href="./pages/index.css">
+    <link rel="stylesheet" href="./pages/index.js">
+    <link rel="stylesheet" href="./components/header.css">
+    <link rel="stylesheet" href="./pages/portfolio.css">
+    <link rel="stylesheet" href="./components/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="pages/index.js" defer></script>
+    <script defer src="./components/header.js"></script>
+</head>
+<body>
+    <!--No es necesario que especifique en index.html el codigo html de header y del footer ya que lo haré en sus respectivos .js. Pero si debo poner un contenedor para traerlo cuando sea necesario. Pero si lo voy a maquetar primero acá para después copiarlo en el js-->
+    <div class="header">
+        <div class="header__contenedor">
+           <h4 class="header__logo">Tu Logo</h4>
+           <button class="header__menu-abrir">
+            <img src="./menu-svgrepo-com 1.png" alt="iconoAbrir" class="header__icono-abrir">
+           </button>
+           <div class="header__menu">
+            <div class="contenedor__boton-cerrar">
+                <button class="header__menu-cerrar">
+                    <img src="./Vector.png" alt="iconoCerrar" class="header__icono-cerrar">
+                </button></div>
+            <div class="header__menu-contenido">
+                <a href="./portfolio.html" class="link">Portfolio</a>
+                <a href="./servicios.html" class="link">Servicios</a>
+                <a href="./contacto.html" class="link">Contacto</a>
+            </div>
+           </div>
+        </div>
+    </div>
+    <div class="bienvenidos">
+        <div class="bienvenidos__contenedor">
+            <h1 class="bienvenidos__contenedor__titulo"><span class="color-blanco">Hola</span><br>Soy<br>Marce </h1>
+            <img src="./cohete.png" alt="" class="bienvenidos__contenedor__imagen">
+        </div>
+    </div>
+    <div class="presentacion">
+        <div class="presentacion__contenedor">
+            <h2 class="presentacion__contenedor__titulo">Soy Marce</h2>
+            <p class="presentacion__contenedor__parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.... </p>
+            <img src="./imagen presentacion.jpg" alt="" class="presentacion__contenedor__imagen">
+        </div>
+    </div>
+    <div class="servicios">
+        <div class="servicios__contenedor">
+            <h2 class="servicios__contenedor__titulo"><span class="color-blanco">Mis </span>servicios</h2>
+            <!--En este espacio debo insertar las tarjetas creadas con contentful, que van a representar los servicios-->
+            <div class="servicios__contenedor__contenedor-servicios"></div>
+        </div>
+    </div>
+    <div class="contacto">
+        <div class="contacto__contenedor">
+            <h2 class="contacto__contenedor__titulo">Escribeme</h2>
+            <form action="" class="contacto__contenedor__form">
+                <div class="form__contenedor">
+                    <label class="label_form" for="">Nombre</label>
+                    <input type="text" class="input_form">
+                </div>
+                <div class="form__contenedor">
+                    <label class="label_form" for="">Email</label>
+                    <input type="email" class="input_form">
+                </div>
+                <div class="form__contenedor">
+                    <label class="label_form" for="">Mensaje</label>
+                    <input type="textarea" class="input_form textarea">
+                </div>
+                <button class="form_button">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__contenedor">
+            <h4 class="header__logo">Tu Logo</h4>
+            <div class="footer__contenedor-direcciones">
+                <div class="footer__contendor-link">
+                    <img src="./home.png" alt="imagen-home" class="link__imagen">
+                    <a href="" class="footer__link">Home</a>
+                </div>
+                <div class="footer__contendor-link">
+                    <img src="./user.png" alt="imagen-servicios" class="link__imagen">
+                    <a href="" class="footer__link">Servicios</a>
+                </div>
+                <div class="footer__contendor-link">
+                    <img src="./phone.png" alt="imagen-contacto" class="link__imagen">
+                    <a href="" class="footer__link">Contacto</a>
+                </div>
+            </div>
+            <div class="footer__contenedor-redes-sociales">
+                <img src="./Frame 24.png" alt="linkedin" class="footer__red-social">
+                <img src="./Frame 26.png" alt="github" class="footer__red-social"> 
+                <img src="./Frame 27.png" alt="x" class="footer__red-social">
+            </div>
+            <h5 class="copyright">©2022 - https://apx.school</h5>
+        </div>
+    </div>
+    <template id="servicios__contenedor__contenedor-servicios-id">
+        <div class="card-servicio">
+            <img src="https://www.silocreativo.com/wp-content/uploads/2018/01/imagen-aleatoria-destacada.png" alt="" class="card-imagen">
+            <h3 class="card-titulo">titulo</h3>
+            <p class="card-descripcion">fgdafgad</p>
+        </div>
+    </template>
+</body>
+</html>

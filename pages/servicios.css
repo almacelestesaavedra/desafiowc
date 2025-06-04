@@ -1,0 +1,59 @@
+* {box-sizing:border-box;
+margin: 0%;
+padding: 0%;}
+
+.color-blanco{
+    color:#ffffff
+}
+.servicios{
+    background-color:#13171C;
+    background-image: url(/doodle\ items.png);
+    height: 1903px;
+    width: 100%;
+}
+.servicios__contenedor{
+  padding: 84px 20px;
+}
+.servicios__contenedor__titulo{
+    color: #00ADB5;
+    font-family: "poppins", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 66px;
+}
+.servicios__contenedor__contenedor-servicios{
+    display:grid;
+    justify-items: center;
+    gap: 48px;
+}
+.card-servicio{
+    background-color: rgba(57, 62, 70, 0.5) ;
+    width: 324px;
+    height:481px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px ;
+    justify-content: space-around;
+    border-radius:16px ;
+}
+.card-titulo{
+    font-family: "poppins",sans-serif;
+    font-size: 33px;
+    font-weight: 700;
+    color: #eeeeee;
+    text-align: center;
+}
+.card-imagen{
+    width: 265px;
+    height: 158px;
+    margin-top: 44px;
+}
+.card-descripcion{
+    font-family: "poppins",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #eeeeee;
+    text-align: start;
+}

@@ -1,0 +1,183 @@
+* {box-sizing:border-box;
+margin: 0%;
+padding: 0%;}
+
+.bienvenidos{
+    background-color: #13171C;
+    height: 790px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bienvenidos__contenedor{
+    height: 490px;
+    width: 211px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bienvenidos__contenedor__titulo{
+    text-align: center;
+    color: #00ADB5;
+    font-family: "popins", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 54px;
+}
+.color-blanco{
+    color:#ffffff
+
+}
+.bienvenidos__contenedor__imagen{
+    width: 219px;
+    height: 211px;
+    margin: auto;
+}
+
+.presentacion{
+    background-color: #192130;
+    height: 790px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.presentacion__contenedor{
+    height: 606px;
+    width: 295px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.presentacion__contenedor__titulo{
+    color: #ffffff;
+    font-family: "popins", sans-serif;
+    font-size:42px;
+    font-weight: 700;
+}
+.presentacion__contenedor__parrafo{
+    height: 243px;
+    width: 295px;
+    color: #eeeeee;
+    font-family: "popins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    opacity: 0.75;
+}
+.presentacion__contenedor__imagen{
+    height: 241px;
+    width: 295px;
+}
+.servicios{
+    background-color:#13171C;
+    background-image: url(/doodle\ items.png);
+    height: 1903px;
+}
+.servicios__contenedor{
+  padding: 84px 20px;
+}
+.servicios__contenedor__titulo{
+    color: #00ADB5;
+    font-family: "poppins", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 66px;
+}
+.servicios__contenedor__contenedor-servicios{
+    display:grid;
+    justify-items: center;
+    gap: 48px;
+}
+.card-servicio{
+    background-color: rgba(57, 62, 70, 0.5) ;
+    width: 324px;
+    height:481px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px ;
+    justify-content: space-around;
+    border-radius:16px ;
+}
+.card-titulo{
+    font-family: "poppins",sans-serif;
+    font-size: 33px;
+    font-weight: 700;
+    color: #eeeeee;
+    text-align: center;
+}
+.card-imagen{
+    width: 265px;
+    height: 158px;
+    margin-top: 44px;
+}
+.card-descripcion{
+    font-family: "poppins",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #eeeeee;
+    text-align: start;
+}
+
+.contacto{
+    height: 989px;
+    background-color: #13171C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 86px 31px 135px 31px;
+}
+.contacto__contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacto__contenedor__titulo{
+    color:#ffffff;
+    font-family: "poppins",sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+}
+.contacto__contenedor__form{
+    height: 649px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 39px;
+}
+.form__contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.label_form{
+    color:#eeeeee;
+    font-family: "poppins";
+    font-weight:100;
+    font-size: 18px;
+
+}
+.input_form{
+    background-color:#393e46;
+    opacity: 50%;
+    width: 313px;
+    height: 59px;
+    border-radius: 16px;
+    box-shadow: none;
+    border: none;
+}
+.textarea{
+    height: 280px;
+}
+.form_button{
+    background-color: #00ADB5;
+    border-radius: 24px;
+    width: 312px;
+    height: 55px;
+    font-family: "poppins";
+    font-size: 18px;
+    font-weight: 100;
+    color:#13171C;
+}
