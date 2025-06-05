@@ -18,9 +18,9 @@ function addCard(params = {}) {
   contenedor.appendChild(clone);
 }
 
-function getServicios() {
+export function getServicios() {
   return fetch(
-    "https://cdn.contentful.com/spaces/o77f8c91ywzf/entries?access_token=34DArBwxr8Y94lJpoMZp3_JDU_aoQe2Nkgc6xoG5exw"
+    "https://cdn.contentful.com/spaces/o77f8c91ywzf/entries?access_token=34DArBwxr8Y94lJpoMZp3_JDU_aoQe2Nkgc6xoG5exw&content_type=work"
   )
     .then((res) => {
       return res.json();
@@ -29,8 +29,9 @@ function getServicios() {
       //para ver que data me trae hago un console.log
       console.log(data);
       const fieldsCollections = data.items.map((items) => {
-        const imagenId = items.fields.imagen.sys.id;
-
+        const imagenId = items.fields.imagen
+          ? items.fields.imagen.sys.id
+          : null;
         // para buscar el asset en includes usando el ID
         const asset = data.includes.Asset.find(
           (asset) => asset.sys.id === imagenId
@@ -45,3 +46,13 @@ function getServicios() {
       return fieldsCollections;
     });
 }
+// Función para cargar
+async function cargarSecciones() {
+  const servicios = await getServicios();
+  servicios.forEach((servicio) => {
+    addCard(servicio, "..servicios__contenedor__contenedor-servicios");
+  });
+}
+
+// Llamás a cargarSecciones para que haga todo
+cargarSecciones();
