@@ -1,5 +1,5 @@
 //Crear una funcion para agregar mis cartas de contentful a mi página.
-function addCard(params = {}) {
+export function addCard(params = {}) {
   //tener ubicado desde y hacia donde va la informacion, en este caso desde el template hacia el contenedor.
   const template = document.querySelector(
     "#servicios__contenedor__contenedor-servicios-id"
